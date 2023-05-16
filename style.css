@@ -1,0 +1,62 @@
+h1 {
+  /* Make all h1 elements blue */
+  color: #3a5dae;
+  font-size: 80px;
+  /* Make uppercase */
+  text-transform: uppercase;
+}
+
+body {
+  /* Make the body background color pink */
+  background-color: #ff00bb;
+  /* set the height of 'body' rectangle to 100% of page */
+  height: 100%;
+  /* Hide any overflow (elements that go off the page) and require a scrollbar */
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+/* Make all p elements with text class yellow */
+p.text {
+  color: #c6cd13;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Make text class italic */
+.text {
+  font-style: italic;
+}
+
+button {
+  font-size: 100px;
+}
+
+/* Properties apply to button objects *only* when they are being hovered over */
+button:hover {
+  background-color: #ff00bb;
+  color: #c6cd13;
+  box-shadow: 0 0 50px #2207d4;
+}
+
+input {
+/* Distance around object that makes its boundaries larger */
+  padding: 10px;
+/* Distance around object (after padding) that pushes other objects away */
+  margin: 20px;
+}
+
+/* Applies the 'flex-grid' layout to the container class element */
+/* This makes it so the children of this tag are arranged in a line (here a column) */
+/* And dynamically arrange themselves. Here we set both axis to center the elements */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
